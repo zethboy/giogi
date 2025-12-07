@@ -1,0 +1,79 @@
+{
+  "hello": "Halo Dunia!",
+  "about_title": "Tentang Kami",
+  "navbar": {
+    "about": "Tentang",
+    "project": "Proyek",
+    "contact": "Kontak",
+    "home": "Beranda"
+  },
+  "hero": {
+    "judul" : "Solusi Web Berbasis Data untuk Mempercepat Pertumbuhan Bisnis",
+    "deskripsi" : "Saya membantu bisnis mengambil keputusan lebih cerdas dan membangun pengalaman digital berkinerja tinggi yang didukung data dan engineering modern.",
+    "skill" : "Data Sciencetist",
+    "skill2" : "Web Developer",
+    "skill3" : "Machine Learning Engineer",
+    "b1" : "Lihat karya",
+    "b2" : "hubungi saya"
+  },
+  "highlights":{
+    "judul": "Membangun Solusi Data dan Digital.",
+    "deskripsi": "Spesialis Full Stack yang mahir dalam implementasi Machine Learning untuk mengambil keputusan cerdas dan menciptakan aplikasi web yang modern.",
+    "kontak": "hubungi",
+    "p1": "tahun pengalaman",
+    "p2": "proyek selesai",
+    "p3": "klien puas",
+    "p4": "tersedia layanan"
+  },
+  "projects": {
+    "judul": "Beberapa proyek",
+    "deskripsi": "Berikut adalah beberapa proyek saya yang menampilkan keterampilan saya dalam data science, web development, dan machine learning engineering."
+  },
+  "kontak":{
+    "judul": "Mari Berkolaborasi!",
+    "deskripsi": "Saya terbuka untuk peluang baru dan proyek menarik. Jangan ragu untuk menghubungi saya jika Anda memiliki pertanyaan atau ingin berdiskusi tentang bagaimana kita dapat bekerja sama.",
+    "e3": "Telepon",
+    "e2": "Lokasi",
+    "e1": "email",
+    "f1": "Kirim Pesan",
+    "f2": "Nama Lengkap",
+    "f3": "Alamat Email",
+    "f4": "Subjek",
+    "f5": "Pesan",
+    "fi1": "Nama kamu",
+    "fi2": "email@contoh.com",
+    "fi3": "Apa yang ingin kamu bicarakan?",
+    "fi4": "Tulis pesanmu di sini...",
+    "i1": "Respon cepat",
+    "i2": "Saya biasanya merespons dalam 24 jam. Jika kamu memiliki pertanyaan mendesak, silakan hubungi saya melalui saluran media sosial.",
+    "i3": "ikuti saya",
+    "i4": "Siap untuk proyek",
+    "i5": "Saya sedang mencari proyek menarik dan kolaborasi yang menantang. Mari kita ciptakan sesuatu yang luar biasa bersama!",
+    "emaileror": "Terjadi kesalahan saat mengirim pesan Anda. Silakan coba lagi nanti.",
+    "emailsuccess": "Pesan Anda telah berhasil dikirim! Saya akan segera menghubungi Anda.",
+    "phone": "Telepon",
+    "location": "Lokasi"
+  },
+  "bento": {
+    "card1": {
+      "title": "Wawasan Data",
+      "description": "Memahami pola dan menemukan insight yang berguna",
+      "label": "Analisis Perilaku Pengguna"
+    },
+    "card2": {
+      "title": "Performa Model",
+      "description": "Evaluasi akurasi, presisi, recall, dan efektivitas keseluruhan",
+      "label": "Ringkasan Metrik Klasifikasi"
+    },
+    "card3": {
+      "title": "Kolaborasi",
+      "description": "Bekerja sama dengan mulus",
+      "label": "Kerja Tim"
+    }
+  },
+  "footer": {
+    "teks": "Giogi. Semua hak dilindungi."
+  }
+}
+
+

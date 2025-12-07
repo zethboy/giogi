@@ -1,0 +1,78 @@
+
+{
+  "hello": "Hello World!",
+  "about_title": "About Us",
+  "navbar": {
+    "about": "About",
+    "project": "Projects",
+    "contact": "Contact",
+    "home": "Home"
+  },
+  "hero": {
+    "judul" : "Data-Driven Web Solutions to Accelerate Business Growth",
+    "deskripsi" : "I help businesses make smarter decisions and build high-performance digital experiences powered by data and modern engineering.",
+    "skill" : "Data Scientist",
+    "skill2" : "Web Developer",
+    "skill3" : "Machine Learning Engineer",
+    "b1" : "view my work",
+    "b2" : "contact me"
+  },
+  "highlights":{
+    "judul": "Building Data and Digital Solutions.",
+    "deskripsi": "A Full Stack specialist skilled in implementing Machine Learning to make smart decisions and create modern web applications.",
+    "kontak": "contact",
+    "p1": "years of experience",
+    "p2": "completed projects",
+    "p3": "happy clients",
+    "p4": "services available"
+  },
+  "projects": {
+    "judul": "Some of the projects",
+    "deskripsi": "Here are some of my projects that showcase my skills in data science, web development, and machine learning engineering."
+  },
+  "kontak":{
+    "judul": "Let's Collaborate!",
+    "deskripsi": "I am open to new opportunities and exciting projects. Feel free to reach out if you have any questions or would like to discuss how we can work together.",
+    "e3": "Phone",
+    "e2": "Location",
+    "e1": "email",
+    "f1": "Send Message",
+    "f2": "Full Name",
+    "f3": "Email Address",
+    "f4": "Subject",
+    "f5": "Message",
+    "fi1": "Your name",
+    "fi2": "email@example/com",
+    "fi3": "What do you want to talk about?",
+    "fi4": "Write your message here...",
+    "i1": "Quick Response",
+    "i2": "I usually respond within 24 hours. If you have an urgent question, please contact me through social media channels.",
+    "i3": "Follow me",
+    "i4": "Ready for projects",
+    "i5": "I am looking for exciting projects and challenging collaborations. Let's create something amazing together!",
+    "emaileror": "There was an error sending your message. Please try again later.",
+    "emailsuccess": "Your message has been sent successfully! I will get back to you soon.",
+    "phone": "Phone",
+    "location": "Location"
+  },
+  "bento": {
+    "card1": {
+      "title": "Data Insights",
+      "description": "Understand patterns and discover actionable insights",
+      "label": "User Behavior Analysis"
+    },
+    "card2": {
+      "title": "Model Performance",
+      "description": "Evaluate accuracy, precision, recall, and overall effectiveness",
+      "label": "Classification Metrics Overview"
+    },
+    "card3": {
+      "title": "Collaboration",
+      "description": "Work together seamlessly",
+      "label": "Teamwork"
+    }
+  },
+  "footer" : {
+    "teks" : "Giogi. All rights reserved."
+  }
+} 
