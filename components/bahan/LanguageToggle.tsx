@@ -44,7 +44,7 @@ export default function LanguageToggle({ onChange }: Props) {
           lang === "en" ? "bg-white/20 scale-105" : "hover:bg-white/10"
         }`}
       >
-        🇪‌🇳‌
+        🇺🇸
       </button>
     </div>
   );
