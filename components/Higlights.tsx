@@ -9,7 +9,7 @@ export default function Highlights() {
   const { t } = useTranslation();
 
   return (
-    <section id='about' className="w-full px-4 md:px-8 lg:px-12 py-12 md:py-18 bg-gradient-to-b from-transparent via-slate-900/20 to-transparent">
+    <section id='about' className="w-full px-4 md:px-8 lg:px-12 py-12 md:py-16 bg-gradient-to-b from-transparent via-slate-900/20 to-transparent">
       <div className="max-w-6xl mx-auto w-full">
         {/* Section Header */}
         <div className="text-center px-10 mb-12 md:mb-20">
@@ -24,8 +24,8 @@ export default function Highlights() {
         {/* Main Content Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-center w-full">
           {/* Left: Profile Card */}
-          <div className="flex pl-8 md:justify-center w-full">
-            <div className="w-full max-w-xs md:max-w-sm">
+          <div className="flex justify-center w-full px-0 sm:px-4 md:justify-center">
+            <div className="w-full max-w-full sm:max-w-sm">
               <ProfileCard
                 name="Yogi Nugraha"
                 title="Data Scientist & Web Developer"
@@ -43,7 +43,7 @@ export default function Highlights() {
 
           {/* Right: Magic Bento */}
           <div className="flex justify-center w-full">
-            <div className="w-full">
+            <div className="w-full max-w-xl">
               <MagicBento 
                 textAutoHide={true}
                 enableStars={true}

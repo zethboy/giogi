@@ -50,7 +50,7 @@ const { t } = useTranslation();
 					{/* Right column: navigation links */}
 					<div className="p-6">
 						
-						<nav className="mt-4 grid grid-cols-4 gap-4">
+				<nav className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4">
 							<a href="#home" className="text-gray-300 hover:text-white">{t("navbar.home")}</a>
 							<a href="#projects" className="text-gray-300 hover:text-white">{t("navbar.project")}</a>
 							<a href="#about" className="text-gray-300 hover:text-white">{t("navbar.about")}</a>
@@ -59,10 +59,8 @@ const { t } = useTranslation();
 					</div>
 				</div>
 
-				<div className="text-center text-xs text-gray-500 mt-6" suppressHydrationWarning>
-					© {new Date().getFullYear()} {t("footer.teks")}
-					 <div>
-    </div>
+			<div className="text-center text-xs text-gray-500 mt-6">
+				© {new Date().getFullYear()} {t("footer.teks")}
 				</div>
 			</div>
 		</footer>

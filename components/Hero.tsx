@@ -15,8 +15,11 @@ export default function Hero() {
   const languageKey = i18n.language;
 
   return (
-    <div id="home" className="w-full min-h-full py-15s flex items-center justify-center bg-transparent from-slate-900 via-slate-950 to-black">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 md:px-12 text-center space-y-4">
+    <div
+      id="home"
+      className="w-full min-h-full py-16 sm:py-20 flex items-center justify-center "
+    >
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 md:px-12 text-center space-y-4">
         {/* Main Headline */}
         <div>
           <SplitText
@@ -61,13 +64,13 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-6">
           <Link
             href="#projects"
-            className="px-8 py-3 bg-white text-black font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 hover:scale-105 shadow-lg"
+            className="w-full sm:w-auto min-w-[10rem] px-8 py-3 bg-white text-black font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 hover:scale-105 shadow-lg text-center"
           >
             {t("hero.b1")}
           </Link>
           <Link
             href="#contact"
-            className="px-8 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-black transition-all duration-300 hover:scale-105"
+            className="w-full sm:w-auto min-w-[10rem] px-8 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-black transition-all duration-300 hover:scale-105 text-center"
           >
             {t("hero.b2")}
           </Link>

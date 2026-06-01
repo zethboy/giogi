@@ -1,40 +1,149 @@
 
-.card-swap-container {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  transform: translate(5%, 20%);
-  transform-origin: bottom right;
-  perspective: 900px;
-  overflow: visible;
+.card-swap-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 28rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem 1rem 1rem;
+  overflow: hidden;
+  border-radius: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(15, 12, 35, 0.72);
+  backdrop-filter: blur(18px);
+  box-shadow: inset 0 0 40px rgba(255, 255, 255, 0.03), 0 24px 80px rgba(0, 0, 0, 0.24);
 }
 
-.card {
-  position: absolute;
-  top: 15%;
-  left: 25%;
-  border-radius: 12px;
-  ;
-  background: bg-purple-500/10;
+.swap-card {
+  position: relative;
+  width: clamp(220px, 26vw, 340px);
+  height: clamp(280px, 36vw, 420px);
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 35px 100px rgba(0, 0, 0, 0.28);
+  transition: none;
+}
 
-  transform-style: preserve-3d;
-  will-change: transform;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
+.active-card {
+  z-index: 4;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.side-card {
+  z-index: 2;
+  opacity: 0.85;
+  transform: scale(0.88);
+  pointer-events: none;
+}
+
+.left-card,
+.right-card {
+  width: clamp(200px, 18vw, 300px);
+}
+
+.hidden-card {
+  display: none;
+}
+
+.carousel-top-controls {
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  z-index: 20;
+  pointer-events: none;
+}
+
+.carousel-control,
+.swap-indicators {
+  pointer-events: auto;
+}
+
+.carousel-control {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(15, 23, 42, 0.92);
+  color: white;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.carousel-control:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.swap-indicators {
+  display: flex;
+  gap: 0.55rem;
+  padding: 0.2rem 0.4rem;
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 999px;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.indicator:hover,
+.indicator:focus-visible {
+  transform: scale(1.15);
+  border-color: rgba(255, 255, 255, 0.55);
+}
+
+.indicator.active {
+  background: rgba(255, 255, 255, 0.92);
+  border-color: rgba(255, 255, 255, 0.55);
 }
 
 @media (max-width: 768px) {
-  .card-swap-container {
-    transform: scale(0.40) translate(20%, 20%);
+  .card-swap-wrapper {
+    min-height: 24rem;
+  }
+
+  .swap-card {
+    width: min(92vw, 460px);
+    height: min(72vw, 380px);
+  }
+
+  .carousel-control {
+    width: 2.5rem;
+    height: 2.5rem;
   }
 }
 
 @media (max-width: 480px) {
-  .card-swap-container {
-    transform: scale(0.45) translate(0%, 00%);
+  .card-swap-wrapper {
+    min-height: 22rem;
   }
-  .card {
-    top: 5%;
-    left: 5%;
+
+  .swap-card {
+    width: min(90vw, 360px);
+    height: min(70vw, 320px);
+  }
+
+  .carousel-control {
+    width: 2.2rem;
+    height: 2.2rem;
+    font-size: 1.2rem;
   }
 }

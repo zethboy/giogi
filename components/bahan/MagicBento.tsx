@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef, useEffect, useCallback, useState } from 'react';
+import React, { useRef, useEffect, useCallback, useState, useMemo } from 'react';
 import { gsap } from 'gsap';
 import { useTranslation } from "react-i18next"; 
 import './MagicBento.css';
@@ -519,11 +519,12 @@ const MagicBento: React.FC<BentoProps> = ({
 }) => {
 
    const { t } = useTranslation();
-  const cardData = getCardData(t);
+  const cardData = useMemo(() => getCardData(t), [t]);
   
   const gridRef = useRef<HTMLDivElement>(null);
   const isMobile = useMobileDetection();
   const shouldDisableAnimations = disableAnimations || isMobile;
+  const effectiveParticleCount = isMobile ? 0 : Math.max(4, particleCount);
 
   return (
     <>
@@ -531,7 +532,7 @@ const MagicBento: React.FC<BentoProps> = ({
         <GlobalSpotlight
           gridRef={gridRef}
           disableAnimations={shouldDisableAnimations}
-          enabled={enableSpotlight}
+          enabled={!isMobile && enableSpotlight}
           spotlightRadius={spotlightRadius}
           glowColor={glowColor}
         />
@@ -559,7 +560,7 @@ const MagicBento: React.FC<BentoProps> = ({
                 key={index}
                 {...cardProps}
                 disableAnimations={shouldDisableAnimations}
-                particleCount={particleCount}
+                particleCount={effectiveParticleCount}
                 glowColor={glowColor}
                 enableTilt={enableTilt}
                 clickEffect={clickEffect}

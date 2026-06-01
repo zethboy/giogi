@@ -33,6 +33,9 @@
   transform: translate3d(0, 0, 0.1px);
   position: relative;
   touch-action: none;
+  width: min(100%, 520px);
+  max-width: 520px;
+  margin-inline: auto;
 }
 
 .pc-card-wrapper::before {
@@ -69,7 +72,7 @@
   height: 80svh;
   max-height: 540px;
   display: grid;
-  aspect-ratio: 0.718;
+  aspect-ratio: 0.64;
   border-radius: var(--card-radius);
   position: relative;
   background-blend-mode: color-dodge, normal, normal, normal;
@@ -96,6 +99,35 @@
     radial-gradient(100% 100% at 50% 50%, #00c1ffff 1%, #073aff00 76%),
     conic-gradient(from 124deg at 50% 50%, #c137ffff 0%, #07c6ffff 40%, #07c6ffff 60%, #c137ffff 100%);
   overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .pc-card-wrapper {
+    width: min(92vw, 380px);
+    max-width: 380px;
+    margin-inline: auto;
+  }
+
+  .pc-card {
+    height: auto;
+    max-height: none;
+    aspect-ratio: 0.66;
+    width: 100%;
+    min-height: 380px;
+    border-radius: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pc-card-wrapper {
+    width: min(92vw, 340px);
+    max-width: 340px;
+  }
+
+  .pc-card {
+    aspect-ratio: 0.64;
+    min-height: 360px;
+  }
 }
 
 .pc-card:hover,

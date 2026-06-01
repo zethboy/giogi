@@ -21,12 +21,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav
-      className="w-full sticky top-0 z-50"
-      style={{
-        background: "linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0))",
-      }}
-    >
+    <nav className="w-full sticky top-0 z-50 bg-transparent">
       <div className="max-w-6xl mx-auto px-4 flex items-center justify-between py-4 lg:py-6">
 
         {/* Logo */}
@@ -51,6 +46,8 @@ export default function Navbar() {
         {/* Mobile Hamburger */}
         <button
           className="lg:hidden flex flex-col gap-1.5 cursor-pointer"
+          aria-expanded={open}
+          aria-label={open ? "Tutup menu" : "Buka menu"}
           onClick={() => setOpen(!open)}
         >
           <span
@@ -74,10 +71,10 @@ export default function Navbar() {
       {/* Mobile Menu */}
       <div
         className={`lg:hidden transition-all duration-300 overflow-hidden ${
-          open ? "max-h-50 opacity-100" : "max-h-0 opacity-0"
+          open ? "max-h-[26rem] opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="backdrop-blur-xl bg-black/60 px-6 py-4 flex flex-col gap-4 text-slate-300">
+        <div className="backdrop-blur-xl bg-black/80 px-6 py-4 flex flex-col gap-4 text-slate-200 border-t border-white/10">
           {navLinks.map((link) => (
             <Link
               key={link.key}

@@ -143,7 +143,7 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8 mb-12 md:mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8 mb-12 md:mb-16">
           {/* Contact Info Cards */}
           {contactInfo.map((info, i) => {
             const Icon = info.icon;
@@ -255,7 +255,7 @@ export default function Contact() {
           </div>
 
           {/* Right Column: Additional Info */}
-          <div className="space-y-4 md:space-y-6 lg:space-y-8">
+          <div className="space-y-4 md:space-y-6 lg:space-y-8 lg:sticky lg:top-24">
             {/* Quick Response */}
             <div className="bg-gradient-to-br from-purple-900/20 to-transparent border border-[#392e4e] rounded-lg p-4 md:p-6 backdrop-blur-sm">
               <h4 className="text-base md:text-lg lg:text-xl font-bold text-white mb-2 md:mb-3">{t("kontak.i1")}</h4>
